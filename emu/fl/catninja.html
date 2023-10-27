@@ -1,0 +1,39 @@
+<center>
+<h1>Catninja</h1>
+<link rel="stylesheet" href="flash.css">
+<script language="javascript" type="text/javascript" src="/header.txt"></script>
+<h1 class="fgbg1"></h1><iframe src="/emu/flash/zcatninja.html" class="frame" overflow="hidden"
+  scrolling="no" id="framedthingy" name="framedthingy"></iframe>
+<div id="infodiv">
+  <span id="fpscount" style="color:white; margin-left:50px; top:42%;"></span></center> <span class="material-symbols-outlined"
+    style="float:center;margin-right:50px;top:42%;color:white;"
+    onclick="openFullscreen();"><img src="/img/fullscreen.svg"></img></span>
+</div>
+<div class="gameinfo">
+</div>
+<script>
+  var elem = document.getElementsByClassName("frame")[0];
+  function openFullscreen() {
+    if (elem.requestFullscreen) {
+      elem.requestFullscreen();
+    } else if (elem.webkitRequestFullscreen) { /* Safari */
+      elem.webkitRequestFullscreen();
+    } else if (elem.msRequestFullscreen) { /* IE11 */
+      elem.msRequestFullscreen();
+    }
+  }
+</script>
+
+
+<style>
+  body {
+    margin: 0;
+    background-color: #12121233;
+  }
+
+  iframe {
+    border: none;
+    width: 60%;
+    height: 60vh;
+  }
+</style>
