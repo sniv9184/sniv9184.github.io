@@ -1,0 +1,16 @@
+html {
+  color: white;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  cursor: url('/img/cursor/aev5k-2sxxb.png'), auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html:hover {
+  cursor: url('/img/cursor/aev5k-2sxxb.png'), auto;
+}
+
+span {
+  background-color: white;
+}
