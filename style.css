@@ -1,0 +1,250 @@
+html {
+  cursor: url('img/cursor/aev5k-2sxxb.png'), auto;
+  height: 100%;
+  width: 100%;
+  animation: fadeInAnimation ease 5s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+  font-family: Arial, Helvetica, sans-serif;
+  position: center;
+}
+
+body {
+  background-image: linear-gradient(#808080,#00a7b3); 
+  background-size: 100% auto;
+}
+
+a {
+  cursor: url('img/cursor/aev5k-2sxxb.png'), auto;
+  text-decoration: none;
+}
+
+button {
+  width: 151px;
+  height: 151px;
+  border-radius: 10px;
+  transition-duration: 0.5s;
+  border: 3px solid black;
+  position: center;
+}
+
+footer {
+  background-color: white;
+  color: black;
+  width: 100%;
+  height: 25px;
+  position: fixed;
+  bottom: 0;
+}
+
+main, form {
+	display: flex;
+	flex-direction: column;
+	gap: 64px;
+	margin: 64px auto;
+	max-width: 1000px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+
+
+
+
+ /* custom elements plus events */
+
+@keyframes fadeInAnimation {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.games {
+  margin-left: 100px;
+}
+
+.nextpagebutton, .spclass {
+  width: 100px;
+  margin-top: 50px;
+  height: 500px;
+  float: right;
+  top: -40px;
+  background-color: none;
+  margin-right: 15px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+
+}
+
+.maintitle {
+  font-size: 48px;
+  color: lightcyan;
+}
+
+.mainbox {
+  background-color: #171778;
+  width: 250px;
+  opacity: 75%;
+  border-radius: 25px;
+}
+
+button:hover {
+  background-color: #009ac7;
+  transition-duration: 0.5s;
+  border: 4px solid #0095c2;
+  cursor: url('img/cursor/aev5k-2sxxb.png'), auto;
+  width: 160px;
+  height: 160px;
+  content: "Start";
+}  
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  background: none;
+  color: black;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 100%;
+}
+
+.nav-links a {
+  color: #595959;
+}
+
+.logo img {
+  border: none;
+}
+
+.menu {
+  display: flex;
+  gap: 1em;
+  font-size: 18px;
+}
+
+.menu li {
+  padding: 5px 14px;
+}
+
+.nav-dropdown {
+  position: relative; 
+}
+
+.dropdown {
+  background: #18181a;
+  padding: 1em 0;
+  position: absolute;
+  display: none;
+  top: -150px;
+  border-radius: 8px;
+  box-shadow: #202022 0px 2px 8px 0px;
+}
+
+.dropdown li + li {
+  margin-top: 10px;
+}
+
+.dropdown li {
+  padding: 0.5em 1em;
+  width: 8em;
+  text-align: center;
+}
+
+.dropdown li:hover {
+  background-color: #404040;
+}
+
+.nav-dropdown:hover .dropdown {
+  display: block;
+}
+
+.navbar input[type=checkbox] {
+  display: none;
+}
+
+.hamburger {
+  display: none;
+  font-size: 24px;
+  user-select: none;
+}
+
+.hamburger:hover {
+   cursor: url('img/cursor/aev5k-2sxxb.png'), auto;
+}
+/* Fix folder to folder:hover later */
+
+.folder {
+  width: 151px;
+  height: 151px;
+  border-radius: 10px;
+  transition-duration: 0.5s;
+  border: 3px solid black;
+}
+
+.folder:hover {
+  background-color: #000000;
+  transition-duration: 0.5s;
+  border: 4px solid #121212;
+  cursor: url('img/cursor/aev5k-2sxxb.png');
+  width: 160px;
+  height: 160px;
+  content: "Start"
+}
+
+.navbarbutton {
+  width: 45px;
+  height: 45px;
+  border-radius: 10px;
+  transition-duration: 0.5s;
+  border: 3px solid black;
+  text-align: center;
+}
+
+.navbarbutton:hover {
+  background-color: #000000;
+  transition-duration: 0.5s;
+  border: 4px solid #121212;
+  cursor: url('img/cursor/aev5k-2sxxb.png'), auto;
+  width: 50px;
+  height: 50px;
+}  
+
+.btrighticon {
+  width: 45px;
+  height: 45px;
+  border: 3px solid #918d8d;
+  background-color: #8b8b8b;
+  border-radius: 10px;
+  align-items: center;
+  align-self: center; 
+  align-content: center;
+}
+
+.btrighticon:hover {
+  background-color: #009ac7;
+  transition-duration: 0.5s;
+  border: 4px solid #0095c2;
+  cursor: url('img/cursor/aev5k-2sxxb.png'), auto;
+  width: 50px;
+  height: 50px;
+  content: "Start";
+  align-items: center;
+  align-self: center; 
+  align-content: center;
+}
